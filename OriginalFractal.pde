@@ -1,15 +1,18 @@
 public void setup()
 {
+	background(0);
 	size(500, 500);
 	ellipseMode(CENTER);
 }
 public void draw()
 {
+
 	fractal(250,250,500);
 
 }
 public void fractal(int x, int y, int siz)
 {
+	fill(255, 255, 255);
 	ellipse(x, y, siz, siz);
 	if(siz <= 10){
 		ellipse(x-siz/2, y, siz/2, siz/2);
